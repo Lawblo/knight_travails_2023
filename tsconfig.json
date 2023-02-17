@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2015",
+    "module": "commonjs",
+    "strict": true
+  },
+  "include": ["src/*"]
+}
