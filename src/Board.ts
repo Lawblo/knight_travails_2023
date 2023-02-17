@@ -5,7 +5,6 @@ class Board implements Board {
   visited_nodes: square_list
 
   constructor() {
-    console.log('Board initialized')
     this.board = this.initialize_board()
     this.visited_nodes = []
   }

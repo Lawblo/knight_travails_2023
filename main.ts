@@ -14,6 +14,7 @@ function knightMoves(start: square_coordinate, end: square_coordinate) {
     }
     handle_knight(knight, board, end, queue)
   }
+  board.display_board()
 }
 
 function handle_knight(knight: Knight, board: Board, end: square_coordinate, queue: Knight[]): void {
@@ -25,12 +26,13 @@ function handle_knight(knight: Knight, board: Board, end: square_coordinate, que
   }
 }
 
-let final_route: square_list = knightMoves([4, 0], [3, 7])!
+let final_route: square_list = knightMoves([4, 0], [7, 7])!
 let final_board = new Board()
 
 for (let move of final_route) {
   final_board.set_visited(move, 'x')
 }
 
+console.log(final_route)
 final_board.display_board()
 
